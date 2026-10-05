@@ -191,11 +191,19 @@ Products use soft deletes so removing an item from the active catalog does not d
 - no `.env` secrets committed to the repository
 
 For a production deployment, also configure HTTPS, secure session/cookie settings, production mail, backups, monitoring, and environment-specific secrets.
+## Screenshots
 
-## Portfolio Notes
+### Login
+![Login](screenshots/login.png)
 
-For the strongest GitHub presentation, add real screenshots under `docs/screenshots/` after running the project locally, then place a screenshot section near the top of this README. A short live demo URL is also recommended if the project is deployed.
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
 
+### Products
+![Products](screenshots/products.png)
+
+### Orders
+![Orders](screenshots/orders.png)
 ## License
 
 MIT License. See [LICENSE](LICENSE).
