@@ -11,7 +11,12 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::with('category')->latest()->paginate(8);
+        $query = Product::with('category');
+        if (request()->boolean('low_stock')) {
+            $query->where('stock', '<=', 15);
+        }
+
+        $products = $query->latest()->paginate(8)->withQueryString();
 
         return view('products.index', compact('products'));
     }
